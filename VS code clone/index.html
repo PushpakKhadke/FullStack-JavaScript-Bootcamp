@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Studio Code - Code Editing </title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="/image/vscode.png" type="image/x-icon">
 </head>
     <body>
         <header>
-             <nav class="flex h-12 bg-neutral-800 items-center">
+             <nav class="flex h-12 bg-neutral-800 items-center w-full fixed">
                     <div class="flex">
                         <img class="w-6 h-6 ml-48 mr-3 mt-1" src="/image/vscode.png" alt="vscode icon">
                             <h5 class="text-white text-xl">Visual Studio Code</h5>
                     </div>
                     <div class="ml-6 mt-1">
-                        <ul class="flex text-gray-400 gap-6 font-medium">
-                            <li>Does</li>
-                            <li>Updates</li>
-                            <li>Blog</li>
-                            <li>API</li>
-                            <li>Extensions</li>
-                            <li>FAQ</li>
-                            <li>Learn</li>
+                        <ul class="flex text-gray-400 gap-6 font-medium cursor-pointer">
+                            <li class="hover:text-slate-200">Does</li>
+                            <li class="hover:text-slate-200">Updates</li>
+                            <li class="hover:text-slate-200">Blog</li>
+                            <li class="hover:text-slate-200">API</li>
+                            <li class="hover:text-slate-200">Extensions</li>
+                            <li class="hover:text-slate-200">FAQ</li>
+                            <li class="hover:text-slate-200">Learn</li>
                         </ul>
                     </div>
-                    <div class="flex ml-44">
+                    <div class="flex ml-40">
                         <input class="bg-neutral-700 placeholder:text-slate-200 block border border-neutral-700  py-2 pl-9 w-44 
                          focus:outline-none focus:border-white focus:ring-white focus:ring-0 sm:text-sm" placeholder="Search Docs"  type="text">
                         <div class="flex justify-center items-center bg-blue-800 px-5 py-3 font-medium text-white cursor-pointer">
@@ -37,9 +38,16 @@
             </nav>
         </header>
 
-        <div class=" flex bg-neutral-900 h-10 text-slate-200 items-center justify-center">
-            <p><span class="text-blue-600 mr-1 hover:underline cursor-pointer">Version 1.73 </span> is now available! Read about the new features and fixes from October. </p>
+        <section>
+            <div class="flex bg-neutral-900 h-24 text-slate-200 items-end justify-center">
+                <p class="mb-3"><span class="text-blue-600 mr-1 hover:underline cursor-pointer">Version 1.73 </span> is now available! Read about the new features and fixes from October. </p>
+            </div>
+        </section>
+
+        <div class="bg-neutral-800 text-slate-400 flex items-center justify-center ">
+            <p>Build Only for Education Purpose</p>
         </div>
+        
             <!-- main container -->
         <section>
             <div class="flex bg-neutral-800">
@@ -66,23 +74,32 @@
         </section>
 
         <section>
-            <div class="flex justify-center text-center text-xl h-32 items-center">
-                <div class="hover:bg-neutral-300 hover:cursor-pointer w-64 h-32 flex flex-col items-center justify-center">
-                    <span style='font-size:70px;'>&#9739;</span>
-                    <p class="mt-5">IntelliSence</p>
-                </div>
-                <div class="hover:bg-neutral-300 hover:cursor-pointer w-64 h-32 flex flex-col items-center justify-center">
-                    <span style='font-size:70px;'>&#9771;</span>
-                    <p class="mt-5">Run and Debug</p>
-                </div>
-                <div class="hover:bg-neutral-300 hover:cursor-pointer w-64 h-32 flex flex-col items-center justify-center">
-                    <span style='font-size:70px;'>&#9788;</span>
-                    <p class="mt-5">Build-in Git</p>
-                </div>
-                <div class="hover:bg-neutral-300 hover:cursor-pointer w-64 h-32 flex flex-col items-center justify-center">
-                    <span style='font-size:70px;'>&#9842;</span>
-                    <p class="mt-5">Extensions</p>
-                </div>
+            <div class="flex justify-center text-center text-xl h-32 items-center text-slate-700">
+                <a href="#IntelliSense">
+                    <div class="hover:bg-neutral-300 hover:text-violet-900 cursor-pointer w-64 h-32 flex flex-col items-center justify-center">
+                        <span style='font-size:70px;'>&#9739;</span>
+                        <p class="mt-5 hover:text-black text-slate-700">IntelliSence</p>
+                    </div>
+                </a>
+                    <a href="#statement">
+                        <div class="hover:bg-neutral-300 hover:text-green-600 cursor-pointer w-64 h-32 flex flex-col items-center justify-center">
+                            <span style='font-size:70px;'>&#9771;</span>
+                            <p class="mt-5 hover:text-black text-slate-700">Run and Debug</p>
+                        </div>
+                    </a>
+                    <a href="#Git">
+                        <div class="hover:bg-neutral-300 hover:text-rose-700 cursor-pointer w-64 h-32 flex flex-col items-center justify-center">
+                            <span style='font-size:70px;'>&#9788;</span>
+                            <p class="mt-5 hover:text-black text-slate-700">Build-in Git</p>
+                        </div>
+                    </a>
+                    <a href="#Extensible">
+                        <div class="hover:bg-neutral-300 hover:text-black cursor-pointer w-64 h-32 flex flex-col items-center justify-center">
+                            <span style='font-size:70px;'>&#9842;</span>
+                            <p class="mt-5 hover:text-black text-slate-700">Extensions</p>
+                        </div>
+                    </a>
+                
             </div>
         </section>
 
@@ -91,7 +108,7 @@
         <section class="bg-gray-100">
             <div class="h-96 flex mx-48 items-center">
                 <div>
-                    <img class="w-7 mr-10 hover:cursor-pointer" src="/image/left-arrow.png" alt="left-arrow">
+                    <img class="w-7 mr-10 cursor-pointer" src="/image/left-arrow.png" alt="left-arrow">
                 </div>
                 <div class="flex">
                     <div class="mr-2">
@@ -124,7 +141,7 @@
                     </div>
                 </div>
                 <div>
-                    <img class="w-7 ml-10 hover:cursor-pointer" src="/image/right-arrow.png" alt="">
+                    <img class="w-7 ml-10 cursor-pointer" src="/image/right-arrow.png" alt="">
                 </div>
             </div>
         </section>
