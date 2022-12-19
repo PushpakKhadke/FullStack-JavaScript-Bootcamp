@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hosting site landing page</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <nav>
-        <div>
+        <div class="nav-logo">
             <img src="./assets/Logo.svg" alt="Logo">
         </div>
-        <div>
-            <ul>
+        <div class="nav-center">
+            <ul class="nav-list">
                 <li>Hosting</li>
                 <li>Domain</li>
                 <li>Features</li>
@@ -21,18 +22,18 @@
             </ul>
         </div>
         <div>
-            <button>Login</button>
+            <button class="btn login-btn">Login</button>
         </div>
     </nav>
 
-    <main>
-        <div>
-            <p>The best and cheapest <span>hosting</span>for your website</p>
-            <p>Hosting your website here is easy, access is fast, server security is 
+    <main class="main">
+        <div class="main-left">
+            <p class="main-heading">The best and<span> cheapest </span>hosting for your website</p>
+            <p class="main-title">Hosting your website here is easy, access is fast, server security is 
                 very well maintained, and of course supported by reliable servers.</p>
-            <div>
-                <button>Get Started</button>
-                <button>Try Start Free</button>
+            <div class="main-btns">
+                <button class="btn gs-btn">Get Started</button>
+                <button class="btn tsf-btn">Try Start Free</button>
             </div>
         </div>
         <div>
@@ -40,32 +41,35 @@
         </div>
     </main>
 
-    <div>
-        <img src="./assets/Logo-light.svg" alt="logo">
-        <img src="./assets/Logo-light.svg" alt="logo">
-        <img src="./assets/Logo-light.svg" alt="logo">
-        <img src="./assets/Logo-light.svg" alt="logo">
+    <!-- logos -->
+    <div class="logos-sec">
+        <div class="logos">
+            <img src="./assets/Logo-light.svg" alt="logo">
+            <img src="./assets/Logo-light.svg" alt="logo">
+            <img src="./assets/Logo-light.svg" alt="logo">
+            <img src="./assets/Logo-light.svg" alt="logo">
+        </div>
     </div>
-
-    <section>
-        <div>
-            <div>
+    
+    <section class="service-features">
+        <div class="service">
+            <div class="service-titles">
                 <p>The best service especially for you</p>
                 <p>We will serve you as best we can with the aim of providing satisfaction to you.</p>
             </div>
-            <div>
-                <div class="items">
+            <div class="service-item">
+                <div class="serv-itm-box">
                     <img src="./assets/Icons/fast.svg" alt="photo">
                     <p>Faster hosting process</p>
                     <p>We can speed up the creation of your website, which is made 
                         directly by the experts.</p>
                 </div>
-                <div class="items">
+                <div class="serv-itm-box">
                     <img src="./assets/Icons/signal.svg" alt="photo">
                     <p>Speed to access faster</p>
                     <p>Excellent network infrastructure and hardwork to support fast and stable access.</p>
                 </div>
-                <div class="items">
+                <div class="serv-itm-box">
                     <img src="./assets/Icons/heart.svg" alt="photo">
                     <p>Faster Service 24/7</p>
                     <p>We have a response time of less than 150 seconds, available 24 hours a day.</p>
@@ -121,12 +125,232 @@
     <section>
         <div>
             <img src="./assets/Icons/arrow-left.svg" alt="arrow-left">
-            <p>Hosting your website with the service</p>
+            <p>Hosting your website with the service we provide</p>
+            <img src="./assets/Icons/arrow-right.svg" alt="arrow-right">
         </div>
         <div>
+            <div>
+                <p>Regular</p>
+                <p>$8,9<span>/month</span></p>
+                <p>Suitable for you who will build a website and others.</p>
+                <div>
+                    <img src="./assets/Icons/blue-tick.svg" alt="tick">
+                    <p>Up to 16,000 Visitors/Month</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/blue-tick.svg" alt="tick">
+                    <p>500MB SSD Disk Space</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/blue-tick.svg" alt="tick">
+                    <p>Unlimited Bandwidth</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/blue-tick.svg" alt="tick">
+                    <p>Unlimited Database</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/blue-tick.svg" alt="tick">
+                    <p>Instant Backup</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/blue-tick.svg" alt="tick">
+                    <p>1 Email Account</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/blue-tick.svg" alt="tick">
+                    <p>1 Domain</p>
+                </div>
+                <button>Select</button>
+            </div>
 
+            <div>
+                <p>Standard</p>
+                <p>$12,98<span>/month</span></p>
+                <p>Suitable for business, such as a website or management system for complaints.</p>
+                <div>
+                    <img src="./assets/Icons/white-tick.svg" alt="tick">
+                    <p>Up to 36,000 Visitors/Month</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/white-tick.svg" alt="tick">
+                    <p>Unlimited SSD Disk Space</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/white-tick.svg" alt="tick">
+                    <p>Unlimited Bandwidth</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/white-tick.svg" alt="tick">
+                    <p>Unlimited Database</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/white-tick.svg" alt="tick">
+                    <p>Instant Backup</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/white-tick.svg" alt="tick">
+                    <p>Unlimited Account</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/white-tick.svg" alt="tick">
+                    <p>Unlimited Addon Domain</p>
+                </div>
+                <button>Select</button>
+            </div>
+
+            <div>
+                <p>Premium</p>
+                <p>$19,99<span>/month</span></p>
+                <p>Suitable for those of you who need special physical server performance and security.</p>
+                <div>
+                    <img src="./assets/Icons/blue-tick.svg" alt="tick">
+                    <p>Up to 200,000 Visitors/Month</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/blue-tick.svg" alt="tick">
+                    <p>500MB SSD Disk Space</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/blue-tick.svg" alt="tick">
+                    <p>Unlimited Bandwidth</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/blue-tick.svg" alt="tick">
+                    <p>Unlimited Database</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/blue-tick.svg" alt="tick">
+                    <p>Instant Backup</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/blue-tick.svg" alt="tick">
+                    <p>Unlimited Account</p>
+                </div>
+                <div>
+                    <img src="./assets/Icons/blue-tick.svg" alt="tick">
+                    <p>Free Domain</p>
+                </div>
+                <button>Select</button>
+            </div>
         </div>
     </section>
 
+    <!-- After Price section Customer Review -->
+
+    <section>
+        <div>
+            <div>
+                <p>What do our Customers say?</p>
+            </div>
+            <div>
+                <p>You will definitely be surprised how our customers comment on what we
+                    do so well. because we really prioritize the satisfaction of our customers.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <img src="./assets/Icons/Vector.svg" alt="">
+                    <img src="./assets/Icons/Vector-1.svg" alt="">
+                </div>
+                <div>
+                    <p>Slamet Wijaya</p>
+                    <p>CEO Tokped</p>
+                </div>
+                <p>Web hosting that I highly recommend because the service provided is very good,
+                    Hosting is fast so with a pretty fantastic speed.
+                </p>
+                <div>
+                    <img src="./assets/Icons/Star.svg" alt="">
+                    <img src="./assets/Icons/Star.svg" alt="">
+                    <img src="./assets/Icons/Star.svg" alt="">
+                    <img src="./assets/Icons/Star.svg" alt="">
+                    <img src="./assets/Icons/Star.svg" alt="">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="./assets/Icons/Vector.svg" alt="">
+                    <img src="./assets/Icons/Vector-1.svg" alt="">
+                </div>
+                <div>
+                    <p>Turman Tasim</p>
+                    <p>CEO Sickuy</p>
+                </div>
+                <p>I am very satisfied with the web hosting he Provide because the service
+                     is very good, the hosting team fast so the speed is quite fantastic.</p>
+                <div>
+                    <img src="./assets/Icons/Star.svg" alt="">
+                    <img src="./assets/Icons/Star.svg" alt="">
+                    <img src="./assets/Icons/Star.svg" alt="">
+                    <img src="./assets/Icons/Star.svg" alt="">
+                    <img src="./assets/Icons/Star.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+
+    <!-- Sign up Section -->
+
+    <section>
+        <div>
+            <p>Sign Up now for as much hosting and domain as you want for $20.99/year</p>
+        </div>
+        <div>
+            <input type="text" name="" id="" placeholder="Name">
+            <input type="email" name="" id="" placeholder="E-mail Address">
+            <input type="password" name="" id="" placeholder="Password">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <!-- Fotter section -->
+
+    <footer>
+        <div>
+            <ul>
+                <li>Company</li>
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>Career</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Features</li>
+                <li>Domain</li>
+                <li>Hosting</li>
+                <li>WordPress</li>
+                <li>Web Security</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Help</li>
+                <li>Payment method</li>
+                <li>No ledgebase</li>
+                <li>Tutorials</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Social Media</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>Facebook</li>
+                <li>YouTube</li>
+            </ul>
+        </div>
+    </footer>
+
+    <img src="./assets/Logo.svg" alt="">
+    
 </body>
 </html>
