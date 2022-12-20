@@ -73,19 +73,19 @@ nav{
 }
 .main-btns{
     margin-top: 55px;
+    display: flex;
+    gap: 20px;
 }
 .gs-btn{
-    background-color: #2e99f7;
     color: #ffffff;
-    font-size: 18px;
-    padding: 18px 30px;
+    border: 2px solid #ffffff;
+    font-size: 20px;
+    padding:15px 30px;
 }
-.tsf-btn{
-    color: #ffffff;
-    border: 2px solid white;
-    font-size: 18px;
-    padding: 18px 30px;
-    margin: 0px 20px;
+.gs-btn:hover{
+    background-color: #2e99f7;
+    border: none;
+
 }
 /* logos section */
 .logos-sec{
@@ -147,6 +147,14 @@ nav{
     text-align: center;
     border-radius: 30px;
 }
+.serv-itm-box:hover{
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: -100px;
+    border: none;
+    cursor: pointer;
+    transition: .7s;
+}
 .serv-itm-box>p:nth-child(2){
     font-size: 28px;
     font-weight: 500;
@@ -158,12 +166,6 @@ nav{
     color: #828282;
     width: 90%;
     margin-bottom: 30px;
-}
-.service-item>div:nth-child(2){
-    background-color: #000000;
-    color: #ffffff;
-    margin-top: -100px;
-    border: none;
 }
 /* -----Features section */
 .features-section{
@@ -263,7 +265,7 @@ nav{
     margin-top: 100px;
     gap: 30px;
 }
-.price-boxes>.price-box:nth-child(2){
+.price-box:nth-child(2){
     color: #ffffff;
     background-color: #2e99f7;
 }
@@ -275,6 +277,7 @@ nav{
     color: #000000;
     border-radius: 30px;
     padding: 30px 30px 30px 30px;
+    margin-bottom: 120px;
 }
 .plan-detalis{
     display: flex;
@@ -322,4 +325,142 @@ nav{
 .sec-sel-btn{
     background-color: #ffffff;
     color: #2e99f7;
+}
+
+/* -----customer-review-section---- */
+.customer-review-sec{
+    background-color: #ffffff;
+    color: #000000;
+    overflow: hidden;
+}
+.review-headline{
+    display: flex;
+    flex-direction: row;
+}
+.rev-title{
+    display: flex;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+.rev-des{
+    display: flex;
+    font-size: 18px;
+    color: #949494;
+    margin-top: 130px;
+    margin-right: 100px;
+    margin-left: 150px;
+    width: 50%;
+    padding-left: 200px;
+}
+.reviews{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: 120px;
+    width: 1600px;
+}
+.review-box{
+    border: 2px solid #828282;
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 670px;
+    margin-bottom: 100px;
+   
+}
+.review-box:hover{
+    background-color: #000000;
+    color: #ffffff;
+    transition: .7s;
+    border: none;
+}
+.reviews>div:nth-child(2){
+    width: 750px;
+}
+.reviewer-details{
+    margin: 30px 0px;
+}
+.reviewer-details>p:nth-child(1){
+    font-weight: 500;
+    font-size: 18px;
+}
+.review-box>p:nth-child(3){
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.reviews-scrol{
+    height: 5px;
+    background-color: #c0c0c0;
+}
+
+/* ----sign up section---- */
+.signup-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.signup-title{
+    font-size: 50px;
+    font-weight: 500;
+    width: 70%;
+    margin-left: 80px;
+    margin-bottom: 75px;
+}
+.signup{
+    background-color: #292121;
+    padding: 50px 30px;
+    border-radius: 30px;
+    display: flex;
+    gap: 20px;
+}
+.signup-field{
+    background-color: #353434;
+    border: none;
+    padding: 22px 40px;
+    border-radius: 40px;
+    font-size: 20px;
+}
+.signup-field:hover{
+    border: 1px solid #585858;
+}
+.signup-btn{
+    background-color: #2e99f7;
+    border: none;
+    color: #dcdcdc;
+    padding: 22px 40px;
+    border-radius: 40px;
+    font-size: 20px;
+}
+.signup-line{
+    height: 2px;
+    background-color: #585858;
+    margin: 100px 120px 80px 120px;
+}
+.sign-line-two{
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 180px;
+}
+.footer-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #858585;
+    font-weight: 500;
+}
+.footer-list>li:nth-child(1){
+    font-size: 20px;
+}
+.footer-img{
+    margin: 20px 0px 75px 120px;
 }
