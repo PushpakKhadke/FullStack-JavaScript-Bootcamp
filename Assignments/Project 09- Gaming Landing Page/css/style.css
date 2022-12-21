@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+.top-section{
+    color: #ffffff;
+    background-color: #0000006c;
+    background-image: url(../Assets/Photos/futuristic-bg.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* -----navbar ----- */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    align-items: center;
+    margin-left: 100px;
+}
+.nav-logo{
+    margin-right: 120px;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+    margin-top: -10px;
+}
+.nav-btns{
+    position: absolute;
+    right: 100px;
+}
+.nav-btn{
+    font-size: 16px;
+    padding: 15px 30px;
+    background: none;
+    color: #ffffff;
+    border: none;
+}
+.nav-btn:hover{
+    background-color: #c36c1a;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ---container--- */
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0px 100px 120px;
+    gap: 20%;
+}
+.left-container{
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+}
+.con-title{
+    font-size: 50px;
+    font-weight: 600;
+}
+.con-description{
+    margin: 20px 0px 40px 0px;
+    color: #b0b0b0;
+    font-size: 15px;
+    width: 90%;
+}
+.con-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 100px;
+}
+.con-btn{
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+.con-btn:hover{
+    background-color: #c36c1a;
+    border: none;
+    cursor: pointer;
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+}
+.play-btn{
+    width: 80px;
+    margin-bottom: 150px;
+    position: relative;
+    left: -100px;
+    background-color: #000000bd;
+    border-radius: 50px;
+}
+.right-con-bottam{
+    display: flex;
+    flex-direction:row;
+}
+.right-con-bottam>p:nth-child(2){
+    font-size: 25px;
+    width: 45%;
+}
+.right-con-bottam>img:nth-child(1){
+    position: relative;
+    top: -40px;
+    right: 20px;
+}
+.right-con-bottam>img:nth-child(3){
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+
+/* ---fight and war games--- */
+.fight-war-games{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f-w-g-title{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    width: 50%;
+    text-align: center;
+}
+.games-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.games-details>div:nth-child(1){
+    background-image: url(../Assets/Photos/image\ 2.png);
+    background-size: cover;
+    background-position: -280px 0px;
+}
+.games-details>div:nth-child(2){
+    background-image: url(../Assets/Photos/image\ 4.png);
+    background-size: cover;
+    background-position: -200px 0px;
+}
+.games-details>div:nth-child(3){
+    background-image: url(../Assets/Photos/image\ 3.png);
+    background-size: cover;
+    background-position: -150px 0px;
+}
+.games-details>div:nth-child(4){
+    background-image: url(../Assets/Photos/Rectangle\ 56.png);
+    background-size: cover;
+    background-position: -200px 0px;
+}
+.games-det-box{
+    width: 300px;
+    height: 380px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    color: #ffffff;
+}
+.about-game{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+.game-name{
+    margin-top: 20px;
+}
