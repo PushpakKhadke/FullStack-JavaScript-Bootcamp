@@ -247,6 +247,115 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.product-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 550px;
+}
 .product-item{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-item-img>img{
+    width: 90px;
+    position: relative;
+    top: 90px;
+}
+.product-detail{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: #161515;
+    height: 150px;
+    width: 120px;
+    padding: 0px 15px 10px 15px;
+    border-radius: 10px;
+}
+.pro-name-price{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.product-detail>div>p:nth-child(1){
+    font-size: 12px;
+    font-weight: 600;
+}
+.product-detail>div>p:nth-child(2){
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff9a;
+    margin-top: 5px;
+}
+.product-detail>div:nth-child(2)>img{
+    background-color: #000000;
+    padding: 8px;
+    border-radius: 10px;
+    width: 15px;
+}
+/* ---footer--- */
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    gap: 100px;
+}
+.footer-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    margin-right: 35px;
+    color: #bcbcbc;
+}
+.footer-list>li:nth-child(1){
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.sub-btn{
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    background-color: #000000;
+    gap: 10px;
+    padding: 14px 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.footer-subscribe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#161515;
+    width: 300px;
+    height: 55px;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 30px;
+    margin-right: 130px;
+}
+.footer-subscribe>input{
+    background-color: #161515;
+    border: none;
+}
+::placeholder{
+    color: #dadada;
+}
+.footer-social{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.footer-uparrow{
+    position: relative;
+    top: 100px;
+    right: 20px;
 }
