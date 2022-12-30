@@ -1,9 +1,9 @@
-//  function sayhello(){
-//     console.log("hey there, Bibek here");
-//  }
+ function sayhello(){
+    console.log("hey there, Bibek here");
+ }
 
-//  sayhello();  //calling a function
-//  sayhello;  //referencing a functioin
+ sayhello();  //calling a function
+ sayhello;  //referencing a functioin
 
 
  function sayhello(name){

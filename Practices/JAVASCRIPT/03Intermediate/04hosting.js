@@ -1,8 +1,8 @@
 
-// console.log(name);
-// var name="bibek";
+console.log(name);
+var name="bibek";
 
-// console.log(name);
+console.log(name);
 tipper("5");
 
 function tipper(a){
