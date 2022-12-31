@@ -20,6 +20,7 @@ var mobilephone={
         ram:"8gb",
         rom:"64bg",
         color:"blue",
-        size:"6.2 inch"
+        size:"6.2 inch",
+        country:"India",
 };
 console.table(mobilephone);
