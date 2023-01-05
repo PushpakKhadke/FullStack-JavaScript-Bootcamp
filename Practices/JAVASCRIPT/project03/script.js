@@ -19,7 +19,7 @@ const courses=[
 
 function generateLIST(){
     const ul=document.querySelector(".list");
-    // ul.innerHTML="";
+    ul.innerHTML="";
 
     courses.forEach((course) => {
 
@@ -30,7 +30,7 @@ function generateLIST(){
 
         const span=document.createElement("span");
         span.classList.add("course-price");
-        const coursePrice=span.createTextNode("$ "+course.price);
+        const coursePrice=document.createTextNode("$ "+course.price);
         span.appendChild(coursePrice);
 
         li.appendChild(span);
@@ -38,6 +38,21 @@ function generateLIST(){
     });
 }
 
-generateLIST();
 
-// window.addEventListener("load",generateLIST);
+window.addEventListener("load",generateLIST);
+
+const asenSort=document.querySelector(".sort-btn");
+
+asenSort.addEventListener("click", ()=>{
+    courses.sort((a,b)=> a.price-b.price);
+    generateLIST();
+});
+
+// assignment
+
+const desSort=document.querySelector(".des-sort");
+
+desSort.addEventListener("click", ()=>{
+    courses.sort((a,b)=>b.price-a.price);
+    generateLIST();
+});
