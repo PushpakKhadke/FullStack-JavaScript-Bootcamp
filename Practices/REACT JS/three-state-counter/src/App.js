@@ -14,8 +14,8 @@ const App = () => {
       <h2>Current Value is {count}</h2>
 
       <button onClick={()=>setCount(0)}>Reset Counter</button>
-      <button onClick={()=>setCount(count+1)}>Increase the Value</button>
-      <button onClick={()=> setCount(count-1)}>Decrease the value</button>
+      <button onClick={()=>(count>10?"":setCount(count+1))}>Increase the Value</button>
+      <button onClick={()=>(count<=0?"":setCount(count-1))}>Decrease the value</button>
       </div>
   )
 };
