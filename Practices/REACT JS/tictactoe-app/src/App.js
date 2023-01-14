@@ -65,7 +65,7 @@ const App=()=> {
 
   return (
     <Container className='p-5'>
-      <ToastContainer position='butttom-center'/>
+      <ToastContainer position='buttom-center'/>
       <Row>
         <Col md={6} className="offset-md-3">
         {winMessage ? (
