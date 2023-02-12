@@ -47,3 +47,16 @@ body{
     border-radius: 10px;
     font-weight: 600;
 }
+
+@media screen and (max-width:500px){
+    .sort-btns{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .sort-btn{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+}

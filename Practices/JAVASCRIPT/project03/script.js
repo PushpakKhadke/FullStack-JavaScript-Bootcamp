@@ -15,26 +15,30 @@ const courses=[
         name:"MongoDB Course",
         price:"3.2",
     },
+    {
+        name:"Android dev",
+        price:"4.8",
+    }
 ];
 
 function generateLIST(){
-    const ul=document.querySelector(".list");
+    const ul=document.querySelector(".list"); //targeting an element by his class name
     ul.innerHTML="";
 
     courses.forEach((course) => {
 
-        const li=document.createElement("li");
-        li.classList.add("course-name");
-        const name=document.createTextNode(course.name);
-        li.appendChild(name);
+        const li=document.createElement("li");  //creating an element li tag
+        li.classList.add("course-name"); //giving class name to an element
+        const name=document.createTextNode(course.name); //fetching the name storing into a variable
+        li.appendChild(name);  //pushing name into li element
 
-        const span=document.createElement("span");
-        span.classList.add("course-price");
-        const coursePrice=document.createTextNode("$ "+course.price);
-        span.appendChild(coursePrice);
+        const span=document.createElement("span"); //creating an span tag
+        span.classList.add("course-price"); // adding class name to span tag
+        const coursePrice=document.createTextNode("$ "+course.price); //fetching price and storing into a variable
+        span.appendChild(coursePrice);  //adding value into span tag
 
-        li.appendChild(span);
-        ul.appendChild(li);
+        li.appendChild(span); //adding span tag under li tag
+        ul.appendChild(li); //adding li tag under ul tag
     });
 }
 

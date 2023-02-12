@@ -1,10 +1,10 @@
 // console.log(this);  // this refers to global objects
 
-function sayHello(){
+function sayHello(){  //this is regular funtion
     var name="Bibek";
     // console.log(this);
 }
-sayHello();
+sayHello(); //regular function call
 
 //for all regular funtion calls, this points to windows objects
 var u={
