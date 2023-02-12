@@ -1,0 +1,34 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    outline: 0px;
+}
+body{
+    background: rgb(95,80,140);
+    background: linear-gradient(135deg, #5f508ce9 16%, #5063aae8 82%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    background: rgb(205,195,236);
+background: linear-gradient(0deg, rgba(205,195,236,0.9837184873949579) 16%, rgba(153,158,224,0.8352591036414566) 82%);
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+}
+.top-sec{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 10px 10px 0px 10px;
+}
+.top-right{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
